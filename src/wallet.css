@@ -1,4 +1,11 @@
-.Wallet {
-  background-color: red;
-  color:red;
+
+.walletSetting {
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.WalletCard {
+	display: inline-block;
+	padding: 15px;
+	margin: 15px;
 }

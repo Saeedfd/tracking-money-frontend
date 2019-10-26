@@ -1,33 +1,37 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Navbar, Button, NavDropdown,Nav,Form,FormControl,Col,Image  } from 'react-bootstrap';
 
 
-
-
-const Navbar =() => {
- const Nav = styled.div`
-  /* Adapt the colors based on primary prop */
-  background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "palevioletred"};
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid rebeccapurple;
-  border-radius: 3px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 35px;
-`;
+const navbox =() => {
 
   return (
     <div>
-    <Nav>TrackingMoney</Nav>
-    
+   	<Navbar bg="light" expand="lg">
+  	<Navbar.Brand href="#home">Track your money</Navbar.Brand>
+  	<Navbar.Toggle aria-controls="basic-navbar-nav" />
+  	<Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#link">Link</Nav.Link>
+      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-success" roundedCircle>Search</Button>
+      		<Image src="./logo.svg" roundedCircle />
+    </Form>
+  	</Navbar.Collapse>
+	</Navbar>
     </div>
   );
 }
 
 
-export default Navbar;
+export default navbox;
