@@ -25,7 +25,7 @@ const navbox =() => {
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-success" roundedCircle>Search</Button>
-      		<Image src="./logo.svg" roundedCircle />
+      		<Image src={require("./images/dollar.png")} roundedCircle  width={30}/>
     </Form>
   	</Navbar.Collapse>
 	</Navbar>

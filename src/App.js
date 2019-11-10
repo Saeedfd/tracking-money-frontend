@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import Wallet from './wallet';
 import Navbar from './navbar.js';
 import WalletCard from './walletCard.js';

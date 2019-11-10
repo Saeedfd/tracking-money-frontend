@@ -8,7 +8,7 @@ const WalletCard =() => {
   return (
     <div className="WalletCard">
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src='logo.svg' />
+      <Card.Img variant="top" src={require('./images/dollar.png')} roundedCircle/>
       <Card.Body>
       <Card.Title>Total balance</Card.Title>
       <Card.Text>
