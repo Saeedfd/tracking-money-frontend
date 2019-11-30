@@ -10,33 +10,38 @@ const WalletCard =() => {
   <thead>
     <tr>
       <th>#</th>
-      <th>Expense</th>
+      <th>Type</th>
+      <th>Category</th>
       <th>Description</th>
-      <th>Price</th>
+      <th>Date</th>
+      <th>Amount</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>1</td>
-      <td>bread</td>
-      <td> for the breakfast</td>
+      <td>image/text</td>
+      <td> travel expense</td>
+      <td>travel to Berlin</td>
+      <td>12.12.2019</td>
       <td>20$</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>rent</td>
-      <td>home rent</td>
-      <td>360$</td>
+        <td>2</td>
+        <td>image/text</td>
+        <td> travel expense</td>
+        <td>travel to Berlin</td>
+        <td>12.12.2019</td>
+        <td>20$</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td colSpan="2">Total Expense</td>
-      <td>380$</td>
+      <td colSpan="5">Total Expense</td>
+      <td>40$</td>
     </tr>
   </tbody>
 </Table>
   );
-}
+};
 
 
 export default WalletCard;

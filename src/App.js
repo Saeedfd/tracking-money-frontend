@@ -1,24 +1,20 @@
-import React from 'react';
+import React , {Component} from 'react';
 import Wallet from './wallet';
 import Navbar from './navbar.js';
-import WalletCard from './walletCard.js';
-import WalletInfo from './walletInfo.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const App= ()=> {
-  return (
-    <div className="App">
-       <Navbar></Navbar>
-       <Wallet></Wallet>
-       <Wallet></Wallet>
-       <WalletInfo></WalletInfo>
-       <WalletInfo></WalletInfo>
-       <WalletInfo></WalletInfo>
-       <WalletCard></WalletCard>
-    </div>
-  );
-}
+class App extends Component {
+
+    render() {
+        return(
+        <div className="App">
+            <Navbar></Navbar>
+            <Wallet ></Wallet>
+        </div>
+        );
+    }
+};
 
 export default App;
