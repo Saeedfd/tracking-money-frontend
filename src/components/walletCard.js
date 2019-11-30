@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table} from 'react-bootstrap';
-import  './wallet.css';
+import './wallet.css';
 
 
 const WalletCard =() => {
